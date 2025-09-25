@@ -78,4 +78,4 @@ if btn_predict:
   result = model.predict([[CRIM, INDUS, CHAS, NOX, RM, AGE, PTRATIO]])
   st.subheader('O valor previsto para o imóvel é:')
   result = 'US $ ' + str(round(result[0]*1000,2))
-  st.write(
+  st.write(result)
